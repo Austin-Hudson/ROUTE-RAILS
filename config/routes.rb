@@ -7,17 +7,11 @@ post "/distance" => "distance#trigger_google_distance_api"
 post '/directions' => "directions#trigger_google_directions_api"
 
 #ROUTES
-# get "/favorites"        => "routes#index"
-# get "/favorite/:name"   => "routes#show"
-post "/favorite/new"    => "routes#create"
-# put "/favorite/:id"     => "routes#update"
-# delete "/favorite/:id"  => "routes#destroy"
+get "/saved-routes"           => "routes#index"
+get "/saved-routes/:name"    => "routes#show"
+post "/saved-routes/new"     => "routes#create"
+# put "/favorite/:id"        => "routes#update"
+# delete "/favorite/:id"     => "routes#destroy"
 
-#STOPS
-# get "/stops"              => "stops#index"
-get "/stops/:id"          => "stops#show"
-# post "/favorite/new"    => "routes#create"
-# put "/favorite/:id"     => "routes#update"
-# delete "/favorite/:id"  => "routes#destroy"
 
 end
