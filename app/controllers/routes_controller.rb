@@ -35,6 +35,8 @@ class RoutesController < ApplicationController
   end
 
   def destroy
+    Route.delete_all(name: params[:name])
+    render json: {'route': 'deleted'}
   end
 
 end
